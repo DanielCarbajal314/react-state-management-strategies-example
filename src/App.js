@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { NoStateManagementContainer } from './NoStateManagement/NoStateManagementContainer'
+import { ContextApiContainer } from './ContextApiManagement/ContextApiContainer'
+import { ReduxContainer } from "./ReduxManagement/ReduxContainer"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Just Props</h1>
+        <NoStateManagementContainer></NoStateManagementContainer> 
+        <h1>Context API</h1>
+        <ContextApiContainer></ContextApiContainer>
+        <h1>Redux</h1>
+        <ReduxContainer></ReduxContainer>
       </header>
     </div>
   );

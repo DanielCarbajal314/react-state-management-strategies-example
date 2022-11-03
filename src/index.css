@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table{
+  width: 100%;
+}
+.container{
+  width: 50%;
+
+}
+
+.table > tbody > tr > td > button{
+  margin: 10px;
+}
